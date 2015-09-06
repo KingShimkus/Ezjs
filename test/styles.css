@@ -1,0 +1,64 @@
+body {
+  background: #FFF0A5;
+  font-family: sans-serif;
+  width: 100%;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+hr {
+  border: 0;
+  border-bottom: 1px dashed #ccc;
+  background: #999;
+}
+
+.code {
+  background-color: rgba(238, 238, 238, 0.2);
+  padding: 5px;
+  border-radius: 5px;
+}
+
+#run {
+  text-align: center;
+  display: inline-block;
+  padding: 15px 30px;
+  color: #222;
+  margin: 50px auto 0 auto;
+  font-size: 3em;
+  border-radius: 10px;
+  border: 5px solid #222;
+  transition: .5s;
+  font-weight: bold;
+}
+
+#run:hover {
+  cursor: pointer;
+  background-color: #222;
+  color: #FFF0A5;
+}
+
+#checks {
+  text-align: left;
+  width: 75%;
+  margin: 50px auto;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #222;
+  font-size: 1.2em;
+  background-color: #222;
+  color: #FFF;
+}
+
+.passed,
+.failed {
+  letter-spacing: .1em;
+}
+
+.passed {
+  color: #468966;
+}
+
+.failed {
+  color: #8E2800;
+}
