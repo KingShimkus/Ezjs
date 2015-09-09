@@ -55,6 +55,27 @@
         }
     };
 
+    // Cloning a object
+    Object.prototype.clone = function() {
+        if (this.cloneNode) return this.cloneNode(true);
+        var copy = this instanceof Array ? [] : {};
+        for (var attr in this) {
+            if (typeof this[attr] == "function" || this[attr] == null || !this[attr].clone)
+                copy[attr] = this[attr];
+            else if (this[attr] == this) copy[attr] = copy;
+            else copy[attr] = this[attr].clone();
+        }
+        return copy;
+    }
+
+    // Loop through Javascript object
+    Object.prototype.each = function(f) {
+        var obj = this
+        Object.keys(obj).forEach(function(key) {
+            f(key, obj[key])
+        });
+    }
+
     // String Methods
     // String Methods
     // String Methods
