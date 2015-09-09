@@ -13,7 +13,7 @@
     // Global functions
     // Global functions
 
-    var RANDOM = {
+    var Random = {
         number: function() {
             if (typeof(arguments[0]) === 'number' && arguments[1] === false) {
                 return Math.random() * (arguments[0] - 0) + 0;
