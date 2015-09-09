@@ -2,12 +2,9 @@
 // Author: Luke Shimkus
 // Copyright: 2015
 // License: MIT
-
 // Version: 0.1.0 dev
-
 // Dependencies: N/A
 // This is the dangerous version of Easify
-
 // Start with semicolon in case other libraries
 // don't end with one.
 ;(function(global) {
@@ -16,9 +13,34 @@
     // Global functions
     // Global functions
 
-    function randomNumber(min, max) {
-        return Math.floor(Math.random() * (max - min + 1) + min);
-    }
+    var RANDOM = {
+        number: function() {
+            if (typeof(arguments[0]) === 'number' && arguments[1] === false) {
+                return Math.random() * (arguments[0] - 0) + 0;
+            } else if (arguments.length === 1) {
+                return Math.floor(Math.random() * (arguments[0]) + 1);
+            } else if (arguments[2] === false) {
+                return Math.random() * (arguments[1] - arguments[0]) + arguments[0];
+            } else {
+                return Math.floor(Math.random() * (arguments[1] - arguments[0] + 1)) + arguments[0];
+            }
+        },
+        letter: function(count) {
+            var text = "";
+            var possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+            if (count) {
+                for (var i = 0; i < count; i++) {
+                    text += possible.charAt(Math.floor(Math.random() * possible.length));
+                }
+            } else {
+                text += possible.charAt(Math.floor(Math.random() * possible.length));
+            }
+            return text;
+        },
+        color: function() {
+            return "#" + ((1 << 24) * Math.random() | 0).toString(16);
+        }
+    };
 
     // Object methods
     // Object methods
