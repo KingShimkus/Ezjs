@@ -217,6 +217,78 @@
         }
     };
 
+    // Function Methods
+    // Function Methods
+    // Function Methods
 
-    console.log("Easify loaded!");
+    Function.prototype.curried = function() {
+        var f, iterate;
+        iterate = function(varArgs) {
+            if (varArgs.length >= f.length) {
+                return f.apply(null, varArgs);
+            }
+            return function() {
+                return iterate(varArgs.concat(Array.prototype.slice.call(arguments)));
+            };
+        };
+        f = this;
+        if (f.length === 0) {
+            return this;
+        }
+        return iterate([]);
+    };
+
+    Function.prototype.andThen = function(g) {
+        var self;
+        self = this;
+        return function(arg) {
+            return g(self(arg));
+        };
+    };
+
+    Function.prototype.compose = function(g) {
+        var self;
+        self = this;
+        return function(arg) {
+            return self(g(arg));
+        };
+    };
+
+    Function.prototype.tupled = function(g) {
+        var self;
+        self = this;
+        return function(args) {
+            return self.apply(self, args);
+        };
+    };
+
+    // Boolean Methods
+    // Boolean Methods
+    // Boolean Methods
+
+    Boolean.unless = function(bool) {
+        return function(f) {
+            if (!bool) {
+                return f();
+            }
+        };
+    };
+
+    Boolean.when = function(bool) {
+        return function(f) {
+            if (bool) {
+                return f();
+            }
+        };
+    };
+
+    Boolean.prototype.unless = function(f) {
+        return Boolean.unless(this.toString() === true.toString())(f);
+    };
+
+    Boolean.prototype.when = function(f) {
+        return Boolean.when(this.toString() === true.toString())(f);
+    };
+
+    console.log("Ezjs loaded!");
 }(window));
