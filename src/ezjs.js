@@ -4,7 +4,9 @@
 // License: MIT
 // Version: 0.1.0 dev
 // Dependencies: N/A
+
 // This is the dangerous version of Easify
+
 // Start with semicolon in case other libraries
 // don't end with one.
 ;(function(global) {
