@@ -26,7 +26,7 @@
 
   // Creates the output for the tests
   function testOutput(text, check) {
-    checkBlock.innerHTML += '<p><span class="code">' + text.substring(0, text.indexOf(')') + 1) + "</span>" + text.substring(text.indexOf(')') + 1, text.length) + ': <span class="' + check + '">' + e.capitalize(check) + '!</span></p><hr/>';
+    checkBlock.innerHTML += '<p><span class="code">' + text.substring(0, text.indexOf(')') + 1) + "</span>" + text.substring(text.indexOf(')') + 1, text.length) + ': <span class="' + check + '">' + check.capitalize() + '!</span></p><hr/>';
   }
 
   // Pulls if/else functionality from tests to make them
