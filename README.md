@@ -59,7 +59,7 @@ String Methods
 ```
 
 Array Methods
---
+---
 
 `Array.bridge(`*arr*`)`- Returns a new Array with the combined values from the original array and *arr*.
 
@@ -80,3 +80,13 @@ Array Methods
 ['Curly', 'Moe', 'Larry'].has('Shemp'); //==> False
 [1, 2, 3].has(4); //==> False
 ```
+
+Boolean Methods
+---
+
+Object Methods
+---
+
+Function Methods
+---
+
