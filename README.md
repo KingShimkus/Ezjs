@@ -14,8 +14,21 @@ To get started using Ezjs, just include `ezjs.js` or `ezjs.min.js` into your HTM
 ```html
 <script src="ezjs.js"></script>
 ```
-Or for the minified version:
+Or for the minified version (improves performance and load time):
 ```html
 <script src="ezjs.min.js"></script>
 ```
 It is also recommended that you put the Ezjs `<script>` tags above you closing body tag, `</body>`. 
+
+
+# Documentation  
+
+This is the documentation for Ezjs. If you see an alias that means that that method name can also be called by the alias, for example:
+``` javascript
+"brenden".capitalize(); //==> "Brenden"
+```
+Is the same as:
+``` javascript
+"brenden".cap(); //==> "Brenden"
+```
+They both return the same result, `.cap()` is just easier to remember and is faster. 
