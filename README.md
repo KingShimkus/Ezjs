@@ -32,3 +32,19 @@ Is the same as:
 "brenden".cap(); //==> "Brenden"
 ```
 They both return the same result, `.cap()` is just easier to remember and is faster. 
+
+String Methods
+---
+`String.capitalize()`- Capitalizes the first letter of a string.
+
+*Alias:* `.cap()`
+
+**Examples:** 
+``` javascript
+"brenden".capitalize(); //==> "Brenden"
+"brenden".cap(); //==> "Brenden"
+```
+
+
+ 
+
