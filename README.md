@@ -6,6 +6,13 @@
 
 This is a Javascript Library that adds simplicity to a complex Javascript. It extends the prototypes of the default Javascript objects in order to add more methods and capabilities for more efficient and faster code. Kind of like [Underscore.js](http://underscorejs.org/) and [Easify](https://github.com/salexzee/Easify), just a little more dangerous. 
 
+ - [Installation](#installation)
+ - [Documentation](#documentation)
+   - [String Methods](#string-methods)
+   - [Array Methods](#array-methods)
+   - [Boolean Methods](#boolean-methods)
+   - [Object Methods](#object-methods)
+   - [Function Methods](#function-methods)
 
 # Installation
 
