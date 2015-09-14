@@ -37,14 +37,46 @@ String Methods
 ---
 `String.capitalize()`- Capitalizes the first letter of a string.
 
-*Alias:* `.cap()`
+*Alias:* `.cap()` `.titlecase()`
 
 **Examples:** 
 ``` javascript
 "brenden".capitalize(); //==> "Brenden"
 "brenden".cap(); //==> "Brenden"
+"bRENDEN".titlecase(); //==> "BENDEN"
+```
+--
+ 
+`String.downcase()`- Returns the string in all lowercase letters.
+
+*Alias:* `.down()` `.lower()`
+
+**Examples:** 
+``` javascript
+"Brenden".downcase(); //==> "brenden"
+"BRENDEN".lower(); //==> "brenden"
+"BrEnDeN".down(); //==> "brenden"
 ```
 
+Array Methods
+--
 
+`Array.bridge(`*arr*`)`- Returns a new Array with the combined values from the original array and *arr*.
+
+**Examples:** 
+``` javascript
+['Curly','Moe','Larry'].bridge(['Shemp','Joe']); 
+//==>  ['Curly', 'Moe', 'Larry', 'Shemp', 'Joe']
+```
+--
+
+`Array.has(`*val*`)`- Returns a boolean of whether or not the array has *val*.
+
+**Examples:** 
+``` javascript
+['Curly', 'Moe', 'Larry'].has('Moe'); //==> True
+[1, 2, 3].has(1); //==> True
  
-
+['Curly', 'Moe', 'Larry'].has('Shemp'); //==> False
+[1, 2, 3].has(4); //==> False
+```
