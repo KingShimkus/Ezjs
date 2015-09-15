@@ -12,7 +12,7 @@ This is a Javascript Library that adds simplicity to a complex Javascript. It ex
    - [Array Methods](#array-methods)
    - [Boolean Methods](#boolean-methods)
    - [Object Methods](#object-methods)
-   - [Function Methods](#function-methods)
+   - [Function Methods](#function-methods) 
 
 # Installation
 
