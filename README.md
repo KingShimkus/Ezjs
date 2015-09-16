@@ -42,7 +42,7 @@ They both return the same result, `.cap()` is just easier to remember and is fas
 
 String Methods
 ---
-`String.capitalize()`- Capitalizes the first letter of a string.
+**`String.capitalize()`**- Capitalizes the first letter of a string.
 
 *Alias:* `.cap()` `.titlecase()`
 
@@ -52,7 +52,7 @@ String Methods
 "brenden".cap(); //==> "Brenden"
 "bRENDEN".titlecase(); //==> "BENDEN"
 ```
---
+---
  
 `String.downcase()`- Returns the string in all lowercase letters.
 
