@@ -15,7 +15,7 @@ This is a Javascript Library that adds simplicity to a complex Javascript. It ex
    - [Function Methods](#function-methods) 
 
 # Installation
-
+ 
 To get started using Ezjs, just include `ezjs.js` or `ezjs.min.js` into your HTML, like so:
 
 ```html
