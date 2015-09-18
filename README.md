@@ -74,7 +74,7 @@ Array Methods
 ``` javascript
 ['Curly','Moe','Larry'].bridge(['Shemp','Joe']); 
 //==>  ['Curly', 'Moe', 'Larry', 'Shemp', 'Joe']
-```
+``` 
 --
 
 `Array.has(`*val*`)`- Returns a boolean of whether or not the array has *val*.
